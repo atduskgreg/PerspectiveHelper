@@ -11,7 +11,7 @@ int T = 3;
 PImage img;
 boolean backgroundLoaded = false;
 int printLineColor = 150;
-boolean photoIsVertical = false;
+boolean photoIsVertical = true;
 
 
 void setup() {
@@ -47,7 +47,9 @@ void draw() {
   } else {
     if(backgroundLoaded){
       background(0);
-      image(img, 0,0);
+      int  x = (width - img.width)/2;
+      println(x);
+      image(img, x,0);
     } else {
       background(0);
     }
