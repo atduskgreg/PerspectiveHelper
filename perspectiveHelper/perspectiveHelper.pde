@@ -46,10 +46,10 @@ void draw() {
 
   } else {
     if(backgroundLoaded){
+      background(0);
       image(img, 0,0);
     } else {
       background(0);
-
     }
 
     pushStyle();
