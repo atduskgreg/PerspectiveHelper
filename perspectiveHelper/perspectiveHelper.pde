@@ -11,6 +11,7 @@ int T = 3;
 PImage img;
 boolean backgroundLoaded = false;
 int printLineColor = 150;
+boolean photoIsVertical = false;
 
 
 void setup() {
@@ -47,7 +48,7 @@ void draw() {
     if(backgroundLoaded){
       image(img, 0,0);
     } else {
-        background(0);
+      background(0);
 
     }
 
@@ -160,7 +161,11 @@ void fileSelected(File selection) {
   else {
     backgroundLoaded = true;
     img = loadImage(selection.getAbsolutePath());
-    img.resize(width, 0);
+    if(photoIsVertical){
+      img.resize(0, height);
+    } else {
+      img.resize(width, 0);
+    }
   }
 }
 
