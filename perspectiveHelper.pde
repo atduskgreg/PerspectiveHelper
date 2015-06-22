@@ -1,6 +1,5 @@
 // TODO:
 // - serialize method for saving and reloading
-// - load in background image
 
 VanishingPoint[] vanishingPoints;
 int currentPoint = 0;
