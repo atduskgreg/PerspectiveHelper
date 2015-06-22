@@ -121,7 +121,7 @@ class VanishingPoint {
 
 
     if(printMode){
-     stroke(80);
+     stroke(printLineColor);
     } else {
      if(selected) {
       stroke(255, 0, 0);

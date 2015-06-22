@@ -10,6 +10,7 @@ int B = 2;
 int T = 3;
 PImage img;
 boolean backgroundLoaded = false;
+int printLineColor = 150;
 
 
 void setup() {
